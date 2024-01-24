@@ -1,0 +1,28 @@
+@use "./../utilities/variables" as v;
+
+.sidebar {
+  background-color: v.$sidebar_bg_color;
+  position: relative;
+  height: 95vh;
+  width: 20%;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.anchor {
+  text-decoration: none;
+  &:visited {
+    color: v.$sidebar_text_color;
+  }
+}
+
+.active {
+  text-decoration: none;
+  color: v.$sidebar_text_active_color;
+
+  &:visited {
+    color: v.$sidebar_text_active_color;
+  }
+}

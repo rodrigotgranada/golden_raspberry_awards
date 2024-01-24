@@ -1,0 +1,21 @@
+table {
+  border-collapse: collapse;
+  //   border-spacing: 1;
+  width: 100%;
+  border: 1px solid #d8d8d8;
+}
+th {
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #d8d8d8;
+}
+th,
+td {
+  text-align: left;
+  padding: 16px;
+  border: 1px solid #d8d8d8;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}

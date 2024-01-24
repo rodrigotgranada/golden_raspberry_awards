@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+// import logo from "./logo.svg";
+// import "./App.css";
+// import axios from "axios";
+import useGetData from "./hooks/useGetData";
+import YearMultipleWinners from "./components/Dashboard/YearMultipleWinners";
+import Header from "./components/Home/Header";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Sidebar from "./components/Home/Sidebar";
+import Dashboard from "./pages/Dashboard";
+import List from "./pages/List";
+import "./styles/Home/Layout.scss";
 
 function App() {
+  // useEffect(() => {
+  //   (async () => {
+  //     axios
+  //       .get(`https://tools.texoit.com/backend-java/api/movies?page=0&size=15`)
+  //       .then((res) => {
+  //         console.log("Funciona", res);
+  //       });
+
+  //     setMovies("");
+  //   })();
+
+  //   return () => {
+  //   };
+  // }, []);
+
+  // useEffect(() => {
+  //   getAllMovies(
+  //     `https://tools.texoit.com/backend-java/api/movies?page=0&size=15`
+  //   );
+  // }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Router>
+        <Header />
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/list" element={<List />} />
+        </Routes>
+      </Router>
+      {/* <YearMultipleWinners /> */}
     </div>
   );
 }
