@@ -1,6 +1,8 @@
 @use "./../utilities/variables";
 
 .Header {
+  position: fixed;
+  z-index: 20;
   display: grid;
   grid-template-areas: "nav";
   width: 100%;

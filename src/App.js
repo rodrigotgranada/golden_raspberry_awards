@@ -34,16 +34,21 @@ function App() {
   // }, []);
 
   return (
-    <div className="container">
+    <div className="main">
       <Router>
         <Header />
-        <Sidebar />
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/list" element={<List />} />
-        </Routes>
+        <div className="container-flex">
+          <div className="container-row">
+            <Sidebar />
+            <div className="content">
+              <Routes>
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/list" element={<List />} />
+              </Routes>
+            </div>
+          </div>
+        </div>
       </Router>
-      {/* <YearMultipleWinners /> */}
     </div>
   );
 }
