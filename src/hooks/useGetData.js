@@ -8,13 +8,19 @@ const useGetData = () => {
 
   const getAllMovies = async (url) => {
     setLoading(true);
-    axios
+    const values = await axios
       // .get(
       //   `https://tools.texoit.com/backend-java/api/movies?page=0&size=15&winner=true`
       // )
-      .get(url)
+      .get(url, {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
+      })
       .then((res) => {
+        console.log("res", res);
         setData(res);
+        return res;
       })
       .catch((err) => {
         setError(err);
@@ -22,6 +28,7 @@ const useGetData = () => {
       .finally(() => {
         setLoading(false);
       });
+    return values;
   };
   return { loading, data, error, getAllMovies };
 };
