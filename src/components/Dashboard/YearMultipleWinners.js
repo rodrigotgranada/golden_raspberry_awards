@@ -9,8 +9,6 @@ const YearMultipleWinners = () => {
       `https://tools.texoit.com/backend-java/api/movies?projection=years-with-multiple-winners`
     );
   }, []);
-
-  if (loading) return <h1>LOADING...</h1>;
   if (error) return <h1>Servidor Fora do ar...</h1>;
   return (
     <div className="box">
@@ -18,6 +16,7 @@ const YearMultipleWinners = () => {
       <Table
         titles={["Year", "Win count"]}
         items={["year", "winnerCount"]}
+        isLoading={loading}
         data={data?.data?.years.slice(0, 3)}
       />
     </div>

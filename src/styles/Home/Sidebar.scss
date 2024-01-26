@@ -9,14 +9,16 @@
   z-index: 1;
   // overflow-x: hidden;
   overflow-x: hidden;
-  top: 5vh;
-  height: 95vh;
-  min-height: 95vh;
+  top: 7vh;
+  height: 93vh;
+  min-height: 93vh;
   width: 20%;
   min-width: 20%;
+  padding: 0.5rem;
 
   li {
     list-style-type: none;
+    margin-bottom: 0.2rem;
   }
 }
 

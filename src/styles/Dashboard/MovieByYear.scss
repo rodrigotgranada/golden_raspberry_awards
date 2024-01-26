@@ -1,0 +1,32 @@
+@use "./../utilities/variables" as v;
+
+.line-search {
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  input.year {
+    width: 90%;
+    padding: 0.41rem;
+    border: 1px solid v.$table_input_line_color;
+    border-radius: 3px;
+  }
+
+  span {
+    width: 7%;
+    height: 100%;
+  }
+  button.search {
+    width: 100%;
+    height: 100%;
+    border: transparent;
+    color: v.$paginate_active_button_color;
+    background-color: v.$paginate_active_button_bg_color;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: baseline;
+  }
+}

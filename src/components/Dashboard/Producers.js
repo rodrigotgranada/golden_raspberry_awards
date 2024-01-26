@@ -9,7 +9,6 @@ const Producers = () => {
       `https://tools.texoit.com/backend-java/api/movies?projection=max-min-win-interval-for-producers`
     );
   }, []);
-  if (loading) return <h1>LOADING...</h1>;
   if (error) return <h1>Servidor Fora do ar...</h1>;
   return (
     <div className="box">
@@ -18,12 +17,14 @@ const Producers = () => {
       <Table
         titles={["Producer", "Interval", "Previous Year", "Following Year"]}
         items={["producer", "interval", "previousWin", "followingWin"]}
+        isLoading={loading}
         data={data?.data?.max.slice(0, 1)}
       />
       <h3>Minimum</h3>
       <Table
         titles={["Producer", "Interval", "Previous Year", "Following Year"]}
         items={["producer", "interval", "previousWin", "followingWin"]}
+        isLoading={loading}
         data={data?.data?.min.slice(0, 1)}
       />
     </div>

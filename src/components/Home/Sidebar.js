@@ -1,7 +1,7 @@
 import React from "react";
 import { SidebarData } from "./SidebarData";
 import "./../../styles/Home/Sidebar.scss";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -18,9 +18,6 @@ const Sidebar = () => {
             >
               {item.title}
             </NavLink>
-            {/* <Link to={item.path}>
-              <span>{item.title}</span>
-            </Link> */}
           </li>
         );
       })}

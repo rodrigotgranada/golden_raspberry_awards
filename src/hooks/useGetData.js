@@ -9,16 +9,12 @@ const useGetData = () => {
   const getAllMovies = async (url) => {
     setLoading(true);
     const values = await axios
-      // .get(
-      //   `https://tools.texoit.com/backend-java/api/movies?page=0&size=15&winner=true`
-      // )
       .get(url, {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
       })
       .then((res) => {
-        console.log("res", res);
         setData(res);
         return res;
       })
@@ -30,7 +26,30 @@ const useGetData = () => {
       });
     return values;
   };
-  return { loading, data, error, getAllMovies };
+
+  const getPaginateData = async ({ page, size, year, winner }) => {
+    setLoading(true);
+    const values = await axios
+      .get(
+        `https://tools.texoit.com/backend-java/api/movies?page=${page}&size=${size}${
+          winner ? `&winner=${winner}` : ""
+        }${year ? `&year=${year}` : ""}`
+      )
+      .then((res) => {
+        const { data } = res;
+        setData(data);
+        return data;
+      })
+      .catch((err) => {
+        setError(err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+
+    return values;
+  };
+  return { loading, data, error, getAllMovies, getPaginateData };
 };
 
 export default useGetData;
