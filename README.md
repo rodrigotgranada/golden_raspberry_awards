@@ -1,2 +1,3 @@
 # golden_raspberry_awards
-Golden Raspberry Awards
+<h1 align="center">Golden Raspberry Awards</h1>
+
