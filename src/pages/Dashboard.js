@@ -12,7 +12,6 @@ const Dashboard = () => {
       <TopStudios />
       <Producers />
       <MovieByYear />
-      {/* {repeater()} */}
     </div>
   );
 };
