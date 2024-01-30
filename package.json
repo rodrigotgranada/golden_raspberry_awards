@@ -3,30 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.6.5",
-    "msw": "^2.1.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1",
-    "react-router-dom": "^6.21.3",
-    "react-scripts": "^5.0.1",
-    "react-table": "^7.8.0",
-    "sass": "^1.70.0",
-    "web-vitals": "^2.1.4"
+    "@testing-library/jest-dom": "*",
+    "@testing-library/react": "*",
+    "@testing-library/user-event": "*",
+    "axios": "*",
+    "msw": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-icons": "*",
+    "react-router-dom": "*",
+    "react-scripts": "*",
+    "react-table": "*",
+    "sass": "*",
+    "web-vitals": "*"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:storybook/recommended"
     ]
   },
   "browserslist": {
@@ -42,6 +45,22 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "*",
+    "@storybook/addon-actions": "*",
+    "@storybook/addon-essentials": "*",
+    "@storybook/addon-interactions": "*",
+    "@storybook/addon-links": "*",
+    "@storybook/addon-onboarding": "*",
+    "@storybook/blocks": "*",
+    "@storybook/manager-api": "*",
+    "@storybook/preset-create-react-app": "*",
+    "@storybook/react": "*",
+    "@storybook/react-webpack5": "*",
+    "@storybook/test": "*",
+    "@storybook/theming": "*",
+    "eslint-plugin-storybook": "*",
+    "prop-types": "*",
+    "storybook": "*",
+    "webpack": "*"
   }
 }

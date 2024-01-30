@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useGetData from "../../hooks/useGetData";
 import TablePagination from "./TablePagination";
-import Pagination from "./Pagination";
 
 const Content = () => {
   const [baseUrl, setBaseUrl] = useState({
@@ -16,7 +15,7 @@ const Content = () => {
     totalElements: 150,
   });
 
-  const { loading, data, error, getPaginateData } = useGetData();
+  const { loading, error, getPaginateData } = useGetData();
 
   useEffect(() => {
     (async () => {
@@ -67,8 +66,6 @@ const Content = () => {
             />
           </div>
         );
-
-        // return "YearAno";
       },
       accessor: "year",
     },
@@ -141,13 +138,6 @@ const Content = () => {
             currentPage: baseUrl.page,
           }}
         />
-
-        {/* <Pagination
-          totalRows={pageData.totalElements}
-          pageChangeHandler={setBaseUrl}
-          rowsPerPage={baseUrl.size}
-          currentPage={baseUrl.page}
-        /> */}
       </div>
     </>
   );
