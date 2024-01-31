@@ -103,6 +103,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[React Icons](https://react-icons.github.io/react-icons/)**
 -   **[React Table](https://tanstack.com/)**
 -   **[Axios](https://github.com/axios/axios)**
+-   **[Storybook](https://storybook.js.org/)**
+-   **[React Testing Library](https://testing-library.com/)**
 
 
 > Veja o arquivo  [package.json](https://github.com/rodrigotgranada/golden_raspberry_awards/blob/main/package.json)
