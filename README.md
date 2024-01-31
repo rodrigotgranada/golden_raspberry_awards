@@ -63,7 +63,7 @@ Desenvolvido um projeto para testar conhecimentos em React.
 ## Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Npm](https://www.npmjs.com/). 
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) (versão >= 18.16.0), [Npm](https://www.npmjs.com/), [Yarn](https://yarnpkg.com/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 
@@ -81,13 +81,25 @@ $ git clone https://github.com/rodrigotgranada/golden_raspberry_awards.git
 # Vá para a pasta da aplicação Front End
 $ cd golden_raspberry_awards
 
+# Instalar o Yarn
+$ npm install --global yarn
+
 # Instale as dependências
-$ npm i
+$ yarn
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm start
+$ yarn start
 
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3001
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+
+# Execute os testes unitários
+$ yarn test
+
+
+# Execute o Storybook
+$ yarn storybook
+
+# A aplicação do storybook será aberta na porta:6006 - acesse http://localhost:6006
 
 ```
 
