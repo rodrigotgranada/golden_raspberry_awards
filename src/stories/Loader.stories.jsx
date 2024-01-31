@@ -1,4 +1,4 @@
-import Loader from "./Loader";
+import Loader from "../components/Others/Loader";
 
 export default {
   title: "components/Loader",

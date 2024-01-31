@@ -1,4 +1,4 @@
-import List from "./List";
+import List from "../pages/List";
 
 export default {
   title: "components/List",

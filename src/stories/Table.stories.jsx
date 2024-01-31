@@ -1,4 +1,4 @@
-import Table from "./Table";
+import Table from "../components/Others/Table";
 
 export default {
   title: "components/Table",

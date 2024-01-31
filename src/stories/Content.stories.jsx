@@ -1,4 +1,4 @@
-import Content from "./Content";
+import Content from "../components/List/Content";
 
 export default {
   title: "components/Content",

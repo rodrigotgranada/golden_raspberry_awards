@@ -1,4 +1,4 @@
-import MovieByYear from "./MovieByYear";
+import MovieByYear from "../components/Dashboard/MovieByYear";
 
 export default {
   title: "components/MovieByYear",
