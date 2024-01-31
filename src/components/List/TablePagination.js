@@ -3,13 +3,7 @@ import { useTable, usePagination } from "react-table";
 import Loader from "../Others/Loader";
 import Pagination from "./Pagination";
 
-const TablePagination = ({
-  columns,
-  data,
-  isLoading,
-  footer,
-  manualPagination = false,
-}) => {
+const TablePagination = ({ columns, data, isLoading, footer }) => {
   const columnData = useMemo(() => columns, [columns]);
   const rowData = useMemo(() => data, [data]);
 
@@ -17,7 +11,6 @@ const TablePagination = ({
     useTable({
       columns: columnData,
       data: rowData,
-      manualPagination,
     });
 
   return (

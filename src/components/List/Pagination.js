@@ -12,8 +12,6 @@ const Pagination = ({
   currentPage,
 }) => {
   const noOfPages = Math.ceil(totalRows / rowsPerPage);
-
-  // Creating an array with length equal to no.of pages
   const pagesArr = [...new Array(noOfPages)];
 
   const [canGoBack, setCanGoBack] = useState(false);
@@ -75,9 +73,6 @@ const Pagination = ({
     <>
       {noOfPages >= 0 ? (
         <div className={"pagination"}>
-          {/* <div className={"pageInfo"}>
-            Showing {pageFirstRecord} - {pageLastRecord} of {totalRows}
-          </div> */}
           <div className={"pagebuttons"}>
             <button
               className={"pageIcon pageBtn "}
