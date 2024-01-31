@@ -87,7 +87,7 @@ $ npm i
 # Execute a aplicação em modo de desenvolvimento
 $ npm start
 
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3001
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
 ```
 
