@@ -21,7 +21,6 @@
 
     &:hover {
       background-color: lighten(variables.$nav_bg_color, 10%);
-      //   color: darken(variables.$nav_text_color, 90%);
       transition: all 0.7s ease;
     }
 

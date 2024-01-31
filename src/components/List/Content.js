@@ -79,7 +79,6 @@ const Content = () => {
       id: "winner",
       Header: () => {
         const handleSearch = (e) => {
-          console.log(e.target.value);
           if (e.target.value != "none") {
             setBaseUrl((prevState) => ({
               ...prevState,

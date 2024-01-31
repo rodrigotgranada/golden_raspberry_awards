@@ -3,9 +3,8 @@ import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import MovieByYear from "../components/Dashboard/MovieByYear";
 import useGetData from "../hooks/useGetData";
-// import { useGetData } from "./useGetData"; // Assuming you have a custom hook for fetching data
 
-jest.mock("../hooks/useGetData"); // Mocking the useGetData hook
+jest.mock("../hooks/useGetData");
 
 describe("MovieByYear component", () => {
   beforeEach(() => {

@@ -16,13 +16,9 @@ describe("Table component", () => {
     const { getByText } = render(
       <Table titles={titles} items={items} isLoading={isLoading} data={data} />
     );
-
-    // Check if table headers are rendered
     titles.forEach((title) => {
       expect(screen.getByText(title)).toBeInTheDocument();
     });
-
-    // Check if table data is rendered
     data.forEach((resultado) => {
       items.forEach((item) => {
         expect(screen.getByText(resultado[item])).toBeInTheDocument();

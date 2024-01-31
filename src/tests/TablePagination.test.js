@@ -64,18 +64,4 @@ describe("TablePagination component", () => {
     const row2 = screen.getByText("Movie 2");
     expect(row2).toBeInTheDocument();
   });
-
-  //   it("renders the pagination component correctly", () => {
-  //     render(
-  //       <TablePagination
-  //         columns={columns}
-  //         data={data}
-  //         isLoading={isLoading}
-  //         footer={footer}
-  //       />
-  //     );
-
-  //     const paginationComponent = screen.getByTestId("pagination-component");
-  //     expect(paginationComponent).toBeInTheDocument();
-  //   });
 });
