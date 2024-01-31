@@ -43,12 +43,14 @@ const Content = () => {
           if (e?.target?.value && e?.target?.value.length === 4) {
             setBaseUrl((prevState) => ({
               ...prevState,
+              page: 0,
               year: e?.target?.value,
             }));
           }
           if (!e?.target?.value || e?.target?.value.length === 0) {
             setBaseUrl((prevState) => ({
               ...prevState,
+              page: 0,
               year: null,
             }));
           }
@@ -81,11 +83,13 @@ const Content = () => {
           if (e.target.value != "none") {
             setBaseUrl((prevState) => ({
               ...prevState,
+              page: 0,
               winner: e?.target?.value,
             }));
           } else {
             setBaseUrl((prevState) => ({
               ...prevState,
+              page: 0,
               winner: null,
             }));
           }
