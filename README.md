@@ -38,9 +38,9 @@ Desenvolvido um projeto para testar conhecimentos em React.
   - [x] Produtores com maior e menor intervalo de vitórias 
   - [x] Pesquisa de filmes com vitória por ano 
 - [x] Na Lista:
-  -[x] Retorna todos os filmes, dividido por páginas de 15 itens
-  -[x] Filtro por ano
-  -[x] Filtro por vitórias
+  - [x] Retorna todos os filmes, dividido por páginas de 15 itens
+  - [x] Filtro por ano
+  - [x] Filtro por vitórias
 ---
 
 ## 🎨 Layout
